@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://mbi6vtadvgd5"]
+
+[ext_resource type="Script" uid="uid://dy8yjdw2ujgqj" path="res://UI/Components/NewGameButton/new_game_button.gd" id="1_70v6o"]
+
+[node name="NewGameButton" type="Button"]
+theme_override_font_sizes/font_size = 32
+text = "NEW_GAME"
+script = ExtResource("1_70v6o")
+metadata/_custom_type_script = "uid://l5y2xio1dlgy"

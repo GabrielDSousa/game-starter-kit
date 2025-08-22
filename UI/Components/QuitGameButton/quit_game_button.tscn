@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://ck83fbtm1igro"]
+
+[ext_resource type="Script" uid="uid://cq2kl337nkcqh" path="res://UI/Components/QuitGameButton/quit_game_button.gd" id="1_d2fcx"]
+
+[node name="QuitGameButton" type="Button"]
+offset_right = 190.0
+offset_bottom = 53.0
+theme_override_font_sizes/font_size = 32
+text = "QUIT_GAME"
+script = ExtResource("1_d2fcx")
+metadata/_custom_type_script = "uid://l5y2xio1dlgy"
