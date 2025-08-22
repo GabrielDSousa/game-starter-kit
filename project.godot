@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="Game Starter Kit"
+run/main_scene="uid://cd8qtix62i6mg"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+TransitionScreen="*res://Globals/Transition/transition_screen.tscn"
 
 [display]
 
