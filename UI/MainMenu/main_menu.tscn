@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://cd8qtix62i6mg"]
+[gd_scene load_steps=5 format=3 uid="uid://cd8qtix62i6mg"]
 
 [ext_resource type="PackedScene" uid="uid://mbi6vtadvgd5" path="res://UI/Components/NewGameButton/new_game_button.tscn" id="1_3jj5y"]
+[ext_resource type="Script" uid="uid://50xc6cbm42fy" path="res://UI/MainMenu/main_menu.gd" id="1_h8rmy"]
 [ext_resource type="PackedScene" uid="uid://ck83fbtm1igro" path="res://UI/Components/QuitGameButton/quit_game_button.tscn" id="1_jld46"]
 [ext_resource type="Script" uid="uid://l5y2xio1dlgy" path="res://Classes/CommonButton.gd" id="1_t17p2"]
 
@@ -11,6 +12,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_h8rmy")
 
 [node name="Panel" type="Panel" parent="."]
 layout_mode = 1
@@ -46,13 +48,13 @@ size_flags_vertical = 0
 [node name="Title" type="Label" parent="Panel/Margin/AspectRatio/MenuLayout/TitleLayout"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 80
-text = "TITLE"
+text = "MENU_LABEL_TITLE"
 horizontal_alignment = 1
 
 [node name="Subtitle" type="Label" parent="Panel/Margin/AspectRatio/MenuLayout/TitleLayout"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 48
-text = "Subtitle"
+text = "MENU_LABEL_SUBTITLE"
 horizontal_alignment = 1
 
 [node name="ButtonsLayout" type="VBoxContainer" parent="Panel/Margin/AspectRatio/MenuLayout"]
@@ -63,11 +65,12 @@ theme_override_constants/separation = 16
 
 [node name="NewGameButton" parent="Panel/Margin/AspectRatio/MenuLayout/ButtonsLayout" instance=ExtResource("1_3jj5y")]
 layout_mode = 2
+text = "MENU_LABEL_NEW_GAME"
 
-[node name="SettingsButton" type="Button" parent="Panel/Margin/AspectRatio/MenuLayout/ButtonsLayout"]
+[node name="OptionsButton" type="Button" parent="Panel/Margin/AspectRatio/MenuLayout/ButtonsLayout"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "SETTINGS_GAME"
+text = "MENU_LABEL_OPTIONS"
 script = ExtResource("1_t17p2")
 metadata/_custom_type_script = "uid://l5y2xio1dlgy"
 
@@ -78,9 +81,10 @@ theme_override_constants/separation = 16
 [node name="CreditsButton" type="Button" parent="Panel/Margin/AspectRatio/MenuLayout/ButtonsLayout/ButtonsLine"]
 layout_mode = 2
 theme_override_font_sizes/font_size = 32
-text = "CREDITS"
+text = "MENU_LABEL_CREDITS"
 script = ExtResource("1_t17p2")
 metadata/_custom_type_script = "uid://l5y2xio1dlgy"
 
 [node name="QuitGameButton" parent="Panel/Margin/AspectRatio/MenuLayout/ButtonsLayout/ButtonsLine" instance=ExtResource("1_jld46")]
 layout_mode = 2
+text = "MENU_LABEL_DESKTOP"
