@@ -3,7 +3,6 @@ extends Button
 
 const CLICK_BUTTON_SOUND = preload("res://Assets/Audio/UI/click_button_sound.ogg")
 const HOVER_BUTTON_SOUND = preload("res://Assets/Audio/UI/hover_button_sound.ogg")
-const SWITCH_BUTTON_SOUND = preload("res://Assets/Audio/UI/switch_button_sound.ogg")
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
